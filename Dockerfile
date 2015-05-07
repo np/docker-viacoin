@@ -27,9 +27,6 @@ ENV HOME /viacoin
 RUN useradd -s /bin/bash -m -d /viacoin viacoin
 RUN chown viacoin:viacoin -R /viacoin
 
-ADD ./bin /usr/local/bin
-RUN chmod a+x /usr/local/bin/*
-
 USER viacoin
 
 VOLUME ["/viacoin"]
